@@ -7,7 +7,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install ${packages}
 sudo apt-get -y autoremove
 
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sed -i 's/"robbyrussell"/"agnoster"/' ~/.zshrc
 
 

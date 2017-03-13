@@ -7,12 +7,7 @@ sudo yum -y install ${packages}
 sudo yum -y autoremove
 sudo pip install powerline-status
 
-#zshscript="$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
-#sudo sed -e "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"agnoster\"" ~/.zshrc > ~/.zshrcOLD
-#sudo mv ~/.zshrcOLD ~/.zshrc
-
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 sed -i 's/"robbyrussell"/"agnoster"/' ~/.zshrc
 
