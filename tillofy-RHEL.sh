@@ -1,10 +1,11 @@
 #!/bin/bash
 
-packages="epel-release git htop powerline zsh"
+packages="epel-release git htop python-pip zsh"
 username="$(whoami)"
 sudo yum -y update
 sudo yum -y install ${packages}
 sudo yum -y autoremove
+sudo pip install powerline-status
 
 #zshscript="$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
