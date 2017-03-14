@@ -1,6 +1,6 @@
-##Description
+## Description
  - This script installes some usefull packages as well as sets ZSH with Oh-My-ZSH as you default shell
-##Installation
+## Installation
 ### RHEL (Fedora, Centos, Red Hat)
  - curl -L https://raw.githubusercontent.com/dentillozie/tillofy/master/tillofy-RHEL.sh | Bash
  - Run this twice.
